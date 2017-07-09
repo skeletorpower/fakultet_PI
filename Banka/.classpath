@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Projekat/lib/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/iText-2.1.7.js2.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/jasperreports-5.6.0.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/jtds-1.2.jar"/>
+	<classpathentry kind="lib" path="/Projekat/lib/miglayout-4.0-swing.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

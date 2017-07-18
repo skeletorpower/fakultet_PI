@@ -21,7 +21,7 @@ public abstract class GenerickaForma extends JDialog {
 
 	protected JTable tblGrid = new JTable();
 
-	protected JButton btnFind, btnReload, btnPikup, btnHelp, btnFirst, btnPrev,
+	protected JButton btnFind, btnReload, btnPickup, btnHelp, btnFirst, btnPrev,
 			btnNext, btnLast, btnAdd, btnRemove, btnNextForm, btnCommit,
 			btnRollback, btnReport;
 
@@ -52,86 +52,80 @@ public abstract class GenerickaForma extends JDialog {
 		lblMode.setForeground(Color.BLUE);
 
 		btnFind = new JButton();
-		btnFind.setToolTipText("Pronađi");
+		btnFind.setToolTipText("Pronadji");
 		btnFind.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Search.png")));
+				"/img/search.gif")));
 		btnFind.setFocusable(false);
 
 		btnReload = new JButton();
-		btnReload.setToolTipText("Osveži");
+		btnReload.setToolTipText("Osvezi");
 		btnReload.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Refresh.png")));
+				"/img/refresh.gif")));
 		btnReload.setFocusable(false);
 
-		btnPikup = new JButton();
-		btnPikup.setToolTipText("Prethodna stranica");
-		btnPikup.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Pickup.png")));
-		btnPikup.setFocusable(false);
+		btnPickup = new JButton();
+		btnPickup.setToolTipText("Prethodna stranica");
+		btnPickup.setIcon(new ImageIcon(getClass().getResource(
+				"/img/zoom-pickup.gif")));
+		btnPickup.setFocusable(false);
 
 		btnHelp = new JButton();
-		btnHelp.setToolTipText("Pomoć");
+		btnHelp.setToolTipText("Pomoc");
 		btnHelp.setIcon(new ImageIcon(getClass()
-				.getResource("/images/Help.png")));
+				.getResource("/img/help.gif")));
 		btnHelp.setFocusable(false);
 
 		btnFirst = new JButton();
 		btnFirst.setToolTipText("Prvi slog");
 		btnFirst.setIcon(new ImageIcon(getClass().getResource(
-				"/images/First.png")));
+				"/img/first.gif")));
 		btnFirst.setFocusable(false);
 
 		btnPrev = new JButton();
 		btnPrev.setToolTipText("Prethodni slog");
 		btnPrev.setIcon(new ImageIcon(getClass()
-				.getResource("/images/Previous.png")));
+				.getResource("/img/prev.gif")));
 		btnPrev.setFocusable(false);
 
 		btnNext = new JButton();
-		btnNext.setToolTipText("Sledeći slog");
+		btnNext.setToolTipText("Sledeci slog");
 		btnNext.setIcon(new ImageIcon(getClass()
-				.getResource("/images/Next.png")));
+				.getResource("/img/next.gif")));
 		btnNext.setFocusable(false);
 
 		btnLast = new JButton();
 		btnLast.setToolTipText("Poslednji slog");
 		btnLast.setIcon(new ImageIcon(getClass()
-				.getResource("/images/Last.png")));
+				.getResource("/img/last.gif")));
 		btnLast.setFocusable(false);
 
 		btnAdd = new JButton();
 		btnAdd.setToolTipText("Dodaj");
-		btnAdd.setIcon(new ImageIcon(getClass().getResource("/images/Add.png")));
+		btnAdd.setIcon(new ImageIcon(getClass().getResource("/img/add.gif")));
 		btnAdd.setFocusable(false);
 
 		btnRemove = new JButton();
-		btnRemove.setToolTipText("Izbriši");
+		btnRemove.setToolTipText("Izbrisi");
 		btnRemove.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Remove.png")));
+				"/img/remove.gif")));
 		btnRemove.setFocusable(false);
-
-		btnNextForm = new JButton();
-		btnNextForm.setToolTipText("Vezne forme");
-		btnNextForm.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Link.png")));
-		btnNextForm.setFocusable(false);
 
 		btnCommit = new JButton();
 		btnCommit.setToolTipText("Commit");
 		btnCommit.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Commit.png")));
+				"/img/commit.gif")));
 		btnCommit.setFocusable(false);
 
 		btnRollback = new JButton();
 		btnRollback = new JButton();
-		btnRollback.setToolTipText("Izbriši");
+		btnRollback.setToolTipText("Izbrisi");
 		btnRollback.setIcon(new ImageIcon(getClass().getResource(
-				"/images/Remove.png")));
+				"/img/remove.gif")));
 		btnRollback.setFocusable(false);
 		
 		btnReport = new JButton();
 		btnReport = new JButton();
-		btnReport.setToolTipText("Izveštaj");
+		btnReport.setToolTipText("Izvestaj");
 		btnReport.setText("Izvestaj");
 		btnReport.setFont(new Font("ARIAL", Font.BOLD, 16));
 		btnReport.setFocusable(false);
@@ -140,7 +134,7 @@ public abstract class GenerickaForma extends JDialog {
 		bar = new JToolBar();
 		bar.add(btnFind);
 		bar.add(btnReload);
-		bar.add(btnPikup);
+		bar.add(btnPickup);
 		bar.add(btnHelp);
 		bar.addSeparator();
 		bar.add(btnFirst);
@@ -151,7 +145,6 @@ public abstract class GenerickaForma extends JDialog {
 		bar.add(btnAdd);
 		bar.add(btnRemove);
 		bar.addSeparator();
-		bar.add(btnNextForm);
 		bar.addSeparator();
 		bar.add(btnReport);
 

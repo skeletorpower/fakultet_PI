@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 import database.DBConnection;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
@@ -37,6 +36,13 @@ public class MainFrame extends JFrame{
 		getContentPane().add(lblNewLabel_1, "cell 4 0,alignx center,aligny center");
 		
 		JButton btnUpRacunima = new JButton("Upravljanje racunima");
+		btnUpRacunima.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				UpravljanjeRacunima upravljanjeRacunima = new UpravljanjeRacunima();
+				upravljanjeRacunima.setEnabled(true);
+				
+			}
+		});
 		getContentPane().add(btnUpRacunima, "cell 0 1,alignx center,aligny center");
 		
 		JButton btnNalogZaTransfer = new JButton("Nalog za transfer");

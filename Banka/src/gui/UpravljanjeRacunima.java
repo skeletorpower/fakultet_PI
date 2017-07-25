@@ -14,6 +14,7 @@ import java.awt.Panel;
 public class UpravljanjeRacunima extends GenerickaForma{
 	private JTable tblGrid = new JTable();
 	public UpravljanjeRacunima() {
+		lblMode.setText("");
 		
 		
 		

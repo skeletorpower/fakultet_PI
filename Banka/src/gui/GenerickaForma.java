@@ -47,7 +47,6 @@ public abstract class GenerickaForma extends JDialog {
 
 	public GenerickaForma() {
 		getContentPane().setLayout(new MigLayout("fill"));
-		lblMode.setText("Rezim pregleda/izmene");
 		lblMode.setFont(new Font("Serif", Font.PLAIN, 24));
 		lblMode.setForeground(Color.BLUE);
 

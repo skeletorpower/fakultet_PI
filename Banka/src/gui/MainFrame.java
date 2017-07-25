@@ -19,7 +19,7 @@ public class MainFrame extends JFrame{
 	//dodacu jos btn po zelji
 	
 	public MainFrame(){
-		DBConnection.getConnection();
+		//DBConnection.getConnection();
 		setSize(566, 400);
 		setMinimumSize(new Dimension(500, 300));
 		setTitle("Banka");
